@@ -124,6 +124,13 @@ h2 {
 }
 
 /* === Galerie === */
+.gallery .lightbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
 .gallery figure {
   margin-bottom: 40px;
   text-align: center;
