@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #005f99;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #007acc;
+}
+
+/* === Reset & Basis === */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('headerbild.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #005f99;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #007acc;
+}
+
+/* === Abschnitte === */
+section {
+  margin: 60px 0;
+}
+
+h2 {
+  font-size: 32px;
+  color: #005f99;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* === Leistungen (Services) === */
+.services .service {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.services .service img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.services .service img:hover {
+  transform: scale(1.03);
+}
+
+.services .service h3 {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.services .service p {
+  margin: 10px auto 20px;
+  max-width: 500px;
+}
+
+/* === Galerie === */
+.gallery figure {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+.gallery figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* === Bewertungen === */
+.testimonials blockquote {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #005f99;
+}
+
+.testimonials footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* === Kontaktformular === */
+.contact form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact button {
+  background-color: #005f99;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #007acc;
+}
+
+/* === Footer === */
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* === Responsive === */
+@media (min-width: 768px) {
+  .services .service,
+  .gallery figure {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .services .service:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .services .service img,
+  .gallery img {
+    flex: 1;
+  }
+
+  .services .service div,
+  .gallery figcaption {
+    flex: 1;
+  }
+}
+
+/* === Fade-in für Formularmeldung === */
+#formular-meldung {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#formular-meldung.visible {
+  opacity: 1;
+}
+
+/* === Lightbox-Stil === */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.lightbox-overlay.active {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
