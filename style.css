@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -91,36 +92,6 @@ h2 {
   color: #005f99;
   margin-bottom: 30px;
   text-align: center;
-}
-
-/* === Leistungen (Services) === */
-.services .service {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.services .service img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.services .service img:hover {
-  transform: scale(1.03);
-}
-
-.services .service h3 {
-  margin-top: 15px;
-  font-size: 24px;
-  color: #333;
-}
-
-.services .service p {
-  margin: 10px auto 20px;
-  max-width: 500px;
 }
 
 /* === Galerie === */
@@ -228,7 +199,6 @@ footer {
 
 /* === Responsive === */
 @media (min-width: 768px) {
-  .services .service,
   .gallery figure {
     display: flex;
     align-items: center;
@@ -236,18 +206,16 @@ footer {
     text-align: left;
   }
 
-  .services .service:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .services .service img,
   .gallery img {
     flex: 1;
   }
 
-  .services .service div,
   .gallery figcaption {
     flex: 1;
+  }
+
+  .service {
+    flex: 0 0 40%;
   }
 }
 
@@ -291,6 +259,7 @@ footer {
   to { opacity: 1; }
 }
 
+/* === Services Slider === */
 .services-slider {
   display: flex;
   overflow-x: auto;
@@ -301,7 +270,7 @@ footer {
 }
 
 .services-slider::-webkit-scrollbar {
-  display: none; /* optional: Scrollbar ausblenden */
+  display: none;
 }
 
 .service {
@@ -343,11 +312,4 @@ footer {
 
 .service .cta-button {
   margin-top: auto;
-}
-
-
-@media (min-width: 768px) {
-  .service {
-    flex: 0 0 40%;
-  }
 }
