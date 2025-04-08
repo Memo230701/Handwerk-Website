@@ -291,7 +291,8 @@ footer {
 .service img {
   width: 100%;
   max-width: 300px;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
 }
