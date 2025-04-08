@@ -290,3 +290,32 @@ footer {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+.services-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.services-slider::-webkit-scrollbar {
+  display: none; /* optional: Scrollbar ausblenden */
+}
+
+.service {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .service {
+    flex: 0 0 40%;
+  }
+}
