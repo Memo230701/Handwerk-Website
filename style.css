@@ -247,7 +247,8 @@ footer {
 
 .lightbox-overlay img {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 90vh;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(255,255,255,0.2);
 }
@@ -266,6 +267,7 @@ footer {
 .services-slider {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   gap: 20px;
   padding-bottom: 20px;
