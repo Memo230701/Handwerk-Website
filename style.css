@@ -329,3 +329,15 @@ img {
 section:nth-of-type(even) {
   background-color: #f9f9f9;
 }
+
+/* === Icon-Styling für Leistungen === */
+.icon-wrapper {
+  margin-bottom: 10px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  stroke: #00bfa6;
+  stroke-width: 2;
+  fill: none;
+}
