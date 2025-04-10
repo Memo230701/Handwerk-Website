@@ -20,13 +20,13 @@ html {
 
 .main-nav a {
   text-decoration: none;
-  color: #00bfa6;
+  color: #0072B2;
   font-weight: bold;
   transition: color 0.2s;
 }
 
 .main-nav a:hover {
-  color: #009e8c;
+  color: #005b8a;
 }
 
 /* === Reset & Basis === */
@@ -83,7 +83,7 @@ body {
 
 .cta-button {
   display: inline-block;
-  background-color: #00bfa6;
+  background-color: #0072B2;
   color: white;
   padding: 12px 24px;
   border-radius: 30px;
@@ -92,7 +92,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #009e8c;
+  background-color: #005b8a;
 }
 
 /* === Abschnitte === */
@@ -102,8 +102,8 @@ section {
 
 h2 {
   font-size: 32px;
-  color: #00bfa6;
-  color: #00bfa6;
+  color: #0072B2;
+  color: #0072B2;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -136,7 +136,7 @@ h2 {
   margin-top: 12px;
   padding: 12px 16px;
   background-color: #f4f4f4;
-  border-left: 4px solid #00bfa6;
+  border-left: 4px solid #0072B2;
   font-style: italic;
   font-size: 16px;
   color: #444;
@@ -166,7 +166,7 @@ h2 {
   background-color: #f9f9f9;
   padding: 20px;
   margin-bottom: 20px;
-  border-left: 4px solid #00bfa6;
+  border-left: 4px solid #0072B2;
 }
 
 .testimonials footer {
@@ -193,7 +193,7 @@ h2 {
 }
 
 .contact button {
-  background-color: #00bfa6;
+  background-color: #0072B2;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -203,7 +203,7 @@ h2 {
 }
 
 .contact button:hover {
-  background-color: #009e8c;
+  background-color: #005b8a;
 }
 
 /* === Footer === */
@@ -319,7 +319,7 @@ footer {
   color: #ff6b6b;
   font-size: 20px;
   margin: 10px 0 5px;
-  color: #00bfa6;
+  color: #0072B2;
 }
 
 .service p {
@@ -354,7 +354,7 @@ section:nth-of-type(even) {
 .icon {
   width: 40px;
   height: 40px;
-  stroke: #00bfa6;
+  stroke: #0072B2;
   stroke-width: 2;
   
 }
@@ -366,7 +366,7 @@ section:nth-of-type(even) {
   position: fixed;
   bottom: 100px;
   right: 20px;
-  background-color: #00bfa6;
+  background-color: #0072B2;
   color: white;
   border: none;
   width: 50px;
@@ -392,7 +392,7 @@ section:nth-of-type(even) {
 }
 
 #scrollTopBtn:hover {
-  background-color: #009e8c;
+  background-color: #005b8a;
 }
 
 
@@ -424,7 +424,7 @@ section:nth-of-type(even) {
 }
 
 #scrollTopBtn:hover {
-  background-color: #009e8c;
+  background-color: #005b8a;
 }
 
 .icon-arrow-bold {
