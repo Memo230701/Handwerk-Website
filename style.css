@@ -373,3 +373,39 @@ section:nth-of-type(even) {
 #scrollTopBtn:hover {
   background-color: #009e8c;
 }
+
+
+/* Stylischer Scroll-to-Top Button mit SVG */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  background-color: rgba(0, 191, 166, 0.9);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#scrollTopBtn.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#scrollTopBtn:hover {
+  background-color: #009e8c;
+}
+
+.icon-arrow {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  stroke-width: 2;
+  fill: none;
+}
