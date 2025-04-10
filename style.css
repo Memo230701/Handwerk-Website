@@ -124,7 +124,7 @@ h2 {
 .gallery img {
   width: 100%;
   max-width: 500px;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: transform 0.3s ease;
 }
 
@@ -150,7 +150,7 @@ h2 {
 
 .lightbox-wrapper {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 10px;
   cursor: pointer;
 }
@@ -188,7 +188,7 @@ h2 {
   font-size: 16px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
@@ -260,11 +260,11 @@ footer {
 }
 
 .lightbox-overlay img {
-  max-width: 90%;
-  max-height: 90vh;
+  max-width: 95%;
+  max-height: 95vh;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  border-radius: 4px;
+  box-shadow: none;
 }
 
 .lightbox-overlay.active {
@@ -281,7 +281,6 @@ footer {
 .services-slider {
   display: flex;
   overflow-x: auto;
-  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   gap: 20px;
   padding-bottom: 20px;
@@ -313,7 +312,7 @@ footer {
   max-width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-bottom: 15px;
 }
 
@@ -341,7 +340,7 @@ img {
   max-width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 /* Farbige Abschnitte */
