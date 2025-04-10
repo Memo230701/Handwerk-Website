@@ -208,9 +208,34 @@
   </script>
 
 
+  
   <button id="scrollTopBtn" title="Nach oben">
     ⬆
   </button>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      const triggerSection = document.getElementById("ueber-uns");
+
+      function checkScroll() {
+        const triggerPosition = triggerSection.offsetTop;
+        if (window.scrollY > triggerPosition) {
+          scrollBtn.classList.add("visible");
+        } else {
+          scrollBtn.classList.remove("visible");
+        }
+      }
+
+      window.addEventListener("scroll", checkScroll);
+
+      scrollBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      checkScroll(); // initial check
+    });
+  </script>
 
   <script>
     const scrollBtn = document.getElementById("scrollTopBtn");
