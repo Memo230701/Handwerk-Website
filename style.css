@@ -442,3 +442,54 @@ section:nth-of-type(even) {
   box-shadow: 0 6px 18px rgba(0, 114, 178, 0.3);
   transform: translateY(-2px);
 }
+
+
+/* === Warum wir Sektion === */
+.why-us-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.why-us-text {
+  flex: 1;
+  text-align: left;
+}
+
+.why-us-features {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.feature {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 114, 178, 0.2);
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .why-us-grid {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .why-us-text {
+    padding-right: 40px;
+  }
+}
