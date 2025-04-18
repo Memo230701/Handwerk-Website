@@ -40,6 +40,11 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   background-color: #fff;
+  background-image: url('parallax-texture.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
   line-height: 1.6;
 }
 
