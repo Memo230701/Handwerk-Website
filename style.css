@@ -691,3 +691,25 @@ body.dark textarea {
 body.dark .map-container {
   box-shadow: 0 4px 12px rgba(0, 255, 200, 0.1);
 }
+
+
+.darkmode-toggle {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.darkmode-toggle button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+body.dark .darkmode-toggle button {
+  color: #f0f0f0;
+}
+.darkmode-toggle button:hover {
+  transform: scale(1.2);
+}
