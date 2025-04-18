@@ -88,17 +88,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Dark Mode Umschalten + speichern
+
+
+// Dark Mode Umschalten + speichern + Icon-Wechsel
 document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.getElementById("darkModeToggle");
   const prefersDark = localStorage.getItem("darkMode") === "true";
 
+  function updateIcon(isDark) {
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+  }
+
   if (prefersDark) {
     document.body.classList.add("dark");
+    updateIcon(true);
+  } else {
+    updateIcon(false);
   }
 
   toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+    const isDark = document.body.classList.toggle("dark");
+    localStorage.setItem("darkMode", isDark);
+    updateIcon(isDark);
   });
 });
