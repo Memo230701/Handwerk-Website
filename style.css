@@ -493,3 +493,40 @@ section:nth-of-type(even) {
     padding-right: 40px;
   }
 }
+
+
+/* === Team Sektion === */
+.team-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.team-member {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 114, 178, 0.2);
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+}
