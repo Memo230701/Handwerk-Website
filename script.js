@@ -86,3 +86,19 @@ document.addEventListener("DOMContentLoaded", function () {
     img.src = "";
   });
 });
+
+
+// Dark Mode Umschalten + speichern
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("darkModeToggle");
+  const prefersDark = localStorage.getItem("darkMode") === "true";
+
+  if (prefersDark) {
+    document.body.classList.add("dark");
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+  });
+});
